@@ -13,7 +13,7 @@ int main() {
 
     //instructions for final_value = 1.0 + 2.0
     myVM.addInstruction(Ins(InsCode::LOAD_CONST, 1.0));
-    myVM.addInstruction(Ins(InsCode::LOAD_VAR, haha));
+    myVM.addInstruction(Ins(InsCode::LOAD_CONST, 2.0));
     myVM.addInstruction(Ins(InsCode::SUB));
     myVM.addInstruction(Ins(InsCode::SET, finalValue));
 
@@ -21,7 +21,7 @@ int main() {
     myVM.run();
 
     //display the results
-    std::cout<<"Value of finalValue is "<< finalValue.get();
+    std::cout<<"Value of finalValue is "<<finalValue.get();
 
     return 0;
 }
