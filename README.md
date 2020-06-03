@@ -9,9 +9,9 @@ C++ is an ahead of time compiled language, which means its not straightforward t
 
 ## So how does a stack based VM work?
 
-Lets try to compute the expression  **(1 + 2)*3**
+Lets try to compute the expression  (1 + 2)*3
 
-A stack based VM stores theses instructions in like this **[1, 2, +, 3, *]**
+A stack based VM stores theses instructions in like this [1, 2, +, 3, *]
 This is known as the reverse polish notation which means '+' in (1 + 2) is written after the operands (1 & 2) like this (1 2 +). The VM simply executes the instructions one by one. The stack state is shown below as the VM iterates through the instructions.
 
  1. [1] 
