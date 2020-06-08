@@ -16,7 +16,7 @@ This is known as the reverse polish notation, which means '+' in (1 + 2) is writ
 
  1. [1] 
  2. [1 2]
- 3. [1 2 +] -> [3] **#since '+' is encountered, pop off the last two elements in the stack, add them and push the result back onto the stack**
+ 3. [1 2 +] -> [3] **#since '+' is encountered, pop off the last two elements [1 2] in the stack, add them and push the result back onto the stack**
  4. [3 3]
  5. [3 3 *] -> [9]
 The only value in the stack now is the evaluated value of the expression, which is **9**
